@@ -1,57 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CP 05 - Front - End</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
-        *{
+        * {
             transition: all 0.3s;
         }
     </style>
 
 </head>
-<body class="bg-black text-white overflow-x-hidden font-poppins">
-    <div class="parte1 text-white top-0 pt-4 h-fit z-0">
-        <header class="flex justify-between mx-8 p-4 bg-[#151719] rounded-lg">
-            <div class="flex justify-between columns-2 w-full">
-                <h1 class="flex flex-column justify-start"><img src="" alt="Melodia App Logo"></h1>
-                <nav class="inline-block ml-8 justify-items-end">
-                    <ul class="flex gap-8 list-none text-lg font-semibold ">
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Funcionalidades</a></li>
-                        <li><a href="#">Depoimentos</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <div class="flex justify-between ">
-            <section class="m-4 p-8 flex flex-col gap-6 font-bold width:80%">
-                <h2 class="text-[#ec1164] lg:text-9xl sm:text-8xl">MELODIA:</h2>
-                <h2 class="text-[#ababab] lg:text-8xl lg:max-w-2xl sm:text-7xl sm:max-w-xl">SUA MÚSICA, SUA FORMA</h2>
-                <p class=" lg:text-2xl lg:max-w-xl sm:text-xl sm:max-w-lg">Descubra novas músicas, crie playlists personalizadas e viva a melhor experiência sonora com o Melodia. Um aplicativo feito para quem ama música e quer ouvir do seu jeito.</p>
-                <button class="bg-[#ec1164] p-3 text-xl rounded-xl max-w-fit"><i class="fa-solid fa-headphones p-2 fa-lg"></i>Ouvir Agora</button>
-            </section>
-            <section class="flex flex-col m-10 p-8 z-[-1] overflow-hidden xl:opacity-100 sm:opacity-50">
-                
-                <img src="./src/img/img01.png" alt="" class="absolute top-0 right-[480px] scale-[0.9] -rotate-[28deg] overflow-hidden ">
-                <img src="./src/img/img02.png" alt="" class="absolute -bottom-60 right-[180px] scale-[0.9] -rotate-[28deg] overflow-hidden ">
-                <img src="./src/img/img03.png" alt="" class="absolute top-20 right-[30px] scale-[0.9] -rotate-[28deg] overflow-hidden ">
-            </section>
-        </div>
-        <div class="flex justify-center items-center gap-10 p-4 bg-[#ec1164] min-w-screen z-50">
-            <button class=""><i class="fa-solid fa-backward fa-4x "></i></button>
-            <button class=""><i class="fa-solid fa-circle-play fa-4x"></i></button>
-            <button class=""><i class="fa-solid fa-forward fa-4x"></i></button>
-        </div>
-    </div>
-    <div class="bg-white h-screen text-black">parte 2</div>
-    <div>parte 3</div>
 
+<body class="bg-black text-white overflow-x-hidden font-poppins">
+    <main>
+        <div class="parte1 text-white top-0 pt-4 h-fit z-0">
+            <header class="flex justify-between mx-8 p-4 bg-[#151719] rounded-lg">
+                <div class="flex justify-between columns-2 w-full">
+                    <h1 class="flex flex-column justify-start"><img src="" alt="Melodia App Logo"></h1>
+                    <nav class="inline-block ml-8 justify-items-end">
+                        <ul class="flex gap-8 list-none text-lg font-semibold ">
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Funcionalidades</a></li>
+                            <li><a href="#">Depoimentos</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="flex justify-between ">
+                <section class="m-4 p-8 flex flex-col gap-6 font-bold width:80%">
+                    <h2 class="text-[#ec1164] lg:text-9xl sm:text-8xl">MELODIA:</h2>
+                    <h2 class="text-[#ababab] lg:text-8xl lg:max-w-2xl sm:text-7xl sm:max-w-xl">SUA MÚSICA, SUA FORMA
+                    </h2>
+                    <p class=" lg:text-2xl lg:max-w-xl sm:text-xl sm:max-w-lg">Descubra novas músicas, crie playlists
+                        personalizadas e viva a melhor experiência sonora com o Melodia. Um aplicativo feito para quem
+                        ama música e quer ouvir do seu jeito.</p>
+                    <button class="bg-[#ec1164] p-3 text-xl rounded-xl max-w-fit"><i
+                            class="fa-solid fa-headphones p-2 fa-lg"></i>Ouvir Agora</button>
+                </section>
+                <section class="flex flex-col m-10 p-8 z-[-1] overflow-hidden xl:opacity-100 sm:opacity-50">
+
+                    <img src="./src/img/img01.png" alt=""
+                        class="absolute top-0 right-[480px] scale-[0.9] -rotate-[28deg] overflow-hidden ">
+                    <img src="./src/img/img02.png" alt=""
+                        class="absolute -bottom-60 right-[180px] scale-[0.9] -rotate-[28deg] overflow-hidden ">
+                    <img src="./src/img/img03.png" alt=""
+                        class="absolute top-20 right-[30px] scale-[0.9] -rotate-[28deg] overflow-hidden ">
+                </section>
+            </div>
+            <div class="flex justify-center items-center gap-10 p-4 bg-[#ec1164] min-w-screen z-50">
+                <button class=""><i class="fa-solid fa-backward fa-4x "></i></button>
+                <button class=""><i class="fa-solid fa-circle-play fa-4x"></i></button>
+                <button class=""><i class="fa-solid fa-forward fa-4x"></i></button>
+            </div>
+        </div>
+        <div class="bg-white h-screen text-black">parte 2</div>
+
+
+        <section id="contato" class="py-20 bg-white text-gray-800">
+            <div class="container mx-auto px-6 max-w-xl text-center">
+                <h2 class="text-3xl font-bold mb-6">Entre em contato</h2>
+                <p class="text-gray-600 mb-8">Deixe seu e-mail e mensagem para receber novidades e entrar em nossa
+                    comunidade.</p>
+                <div class="bg-neutral-800 p-9 rounded-xl text-white">
+                    <form action="#" method="POST" class="text-left">
+                        <div class="mb-4">
+                            <label for="name" class="block font-semibold mb-2">Nome:</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-neutral-700 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500"
+                                placeholder="Seu nome completo">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block font-semibold mb-2">E-mail:</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-neutral-700 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500"
+                                placeholder="seuemail@exemplo.com">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block font-semibold mb-2">Mensagem:</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full bg-neutral-700 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500"
+                                placeholder="Sua mensagem..."></textarea>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <input id="promocoes" type="checkbox" class="w-5 h-5  accent-pink-600 rounded" />
+                            <label for="promocoes" class="text-white font-poppins">
+                                Quero receber e-mails sobre novidades e promoções
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="bg-rose-600 hover:bg-rose-700 text-white font-bold py-3 px-12 rounded-full text-lg transition-transform transform hover:scale-105">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-10">
+        <div class="container mx-auto px-6 text-center md:text-left">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <img src="/assets/logo.png" alt="Logo" class="w-32 mx-auto lg:mx-0" />
+                    <br>
+                    <p class="text-sm">Sua trilha sonora perfeita para cada momento. De clássicos a novidades, de
+                        instrumentais a covers.</p>
+                    <br>
+                    <p>© 2025 Melodia - Todos os direitos reservados.</p>
+                </div>
+                <div class="text-center md:text-left text-sm md:pl-16">
+                    <h3 class="text-2xl font-bold text-rose-500 mb-2 text-center">Contato</h3>
+                    <br>
+                    <p class="text-sm">Rua da Música, 123 - São Paulo, SP</p>
+                    <br>
+                    <p class="text-sm">contato@melodia.com</p>
+                    <br>
+                    <p class="text-sm">(11) 94002-8922</p>
+                </div>
+                <div class="text-center text-sm">
+                    <div class="flex justify-center space-x-6 text-2xl">
+                        <a href="#" class="hover:text-rose-500"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-rose-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-rose-500"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <br>
+                    <a href="#" class="hover:text-rose-500 block mb-2">Política de Privacidade</a>
+                    <a href="#" class="hover:text-rose-500 block">Termos e condições</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
     <script src="https://kit.fontawesome.com/129b440489.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
