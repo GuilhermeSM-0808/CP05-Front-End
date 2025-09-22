@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CP 05 - Front - End</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        *{
+            transition: all 0.3s;
+        }
+    </style>
+
 </head>
-<body>
-    <div>parte 1</div>
-    <div>parte 2</div>
+<body class="bg-black text-white overflow-x-hidden font-poppins">
+    <div class="parte1 text-white top-0 pt-4 h-fit z-0">
+        <header class="flex justify-between mx-8 p-4 bg-[#151719] rounded-lg">
+            <div class="flex justify-between columns-2 w-full">
+                <h1 class="flex flex-column justify-start"><img src="" alt="Melodia App Logo"></h1>
+                <nav class="inline-block ml-8 justify-items-end">
+                    <ul class="flex gap-8 list-none text-lg font-semibold ">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Funcionalidades</a></li>
+                        <li><a href="#">Depoimentos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="flex justify-between ">
+            <section class="m-4 p-8 flex flex-col gap-6 font-bold width:80%">
+                <h2 class="text-[#ec1164] lg:text-9xl sm:text-8xl">MELODIA:</h2>
+                <h2 class="text-[#ababab] lg:text-8xl lg:max-w-2xl sm:text-7xl sm:max-w-xl">SUA MÚSICA, SUA FORMA</h2>
+                <p class=" lg:text-2xl lg:max-w-xl sm:text-xl sm:max-w-lg">Descubra novas músicas, crie playlists personalizadas e viva a melhor experiência sonora com o Melodia. Um aplicativo feito para quem ama música e quer ouvir do seu jeito.</p>
+                <button class="bg-[#ec1164] p-3 text-xl rounded-xl max-w-fit"><i class="fa-solid fa-headphones p-2 fa-lg"></i>Ouvir Agora</button>
+            </section>
+            <section class="flex flex-col m-10 p-8 z-[-1] overflow-hidden xl:opacity-100 sm:opacity-50">
+                
+                <img src="./src/img/img01.png" alt="" class="absolute top-0 right-[480px] scale-[0.9] -rotate-[28deg] overflow-hidden ">
+                <img src="./src/img/img02.png" alt="" class="absolute -bottom-60 right-[180px] scale-[0.9] -rotate-[28deg] overflow-hidden ">
+                <img src="./src/img/img03.png" alt="" class="absolute top-20 right-[30px] scale-[0.9] -rotate-[28deg] overflow-hidden ">
+            </section>
+        </div>
+        <div class="flex justify-center items-center gap-10 p-4 bg-[#ec1164] min-w-screen z-50">
+            <button class=""><i class="fa-solid fa-backward fa-4x "></i></button>
+            <button class=""><i class="fa-solid fa-circle-play fa-4x"></i></button>
+            <button class=""><i class="fa-solid fa-forward fa-4x"></i></button>
+        </div>
+    </div>
+    <div class="bg-white h-screen text-black">parte 2</div>
     <div>parte 3</div>
+
+
+    <script src="https://kit.fontawesome.com/129b440489.js" crossorigin="anonymous"></script>
 </body>
 </html>
